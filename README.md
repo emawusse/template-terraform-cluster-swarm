@@ -1,4 +1,4 @@
-# Terraform-openstack-cluster-swarm
+# Terraform-0penstack-Cluster-Swarm
 Ce projet est la configuration de l'approvisionnement d'un cluster swarm de n noeuds managers et n noeuds workers pour le provider Openstack. Les noeuds comportent également des volumes rattachés (disk) pour faire du pool de stockage si besoin.
 
 ## Pre-requis
