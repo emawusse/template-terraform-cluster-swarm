@@ -9,7 +9,7 @@ Ce projet est la configuration de l'approvisionnement d'un cluster swarm de n no
 
 ## Comment utilisé les fichiers ?
 
-Vous devez cloner le projet : git clone https://github.com/enassar225/terraform-openstack-swarm puis creer un fichier terraform.tfvars pour y mettre vos variables lors du déploiement de l'infra.
+Vous devez cloner le projet : git clone https://github.com/enassar225/terraform-cluster-swarm-openstack.git puis creer un fichier terraform.tfvars pour y mettre vos variables lors du déploiement de l'infra.
 
 Exemple du fichier terraform.tfvars: 
 
