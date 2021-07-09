@@ -74,16 +74,6 @@ resource "openstack_networking_secgroup_rule_v2" "bastion_ping" {
   security_group_id = openstack_compute_secgroup_v2.secgroup_swarm.id
 }
 
-#Affichage de Portainer depuis le web sur le port 9000
-resource "openstack_networking_secgroup_rule_v2" "portainer" {
-  direction         = "ingress"
-  ethertype         = "IPv4"
-  protocol          = "tcp"
-  port_range_min    = 9000
-  port_range_max    = 9000
-  remote_ip_prefix  = "0.0.0.0/0"
-  security_group_id = openstack_compute_secgroup_v2.secgroup_swarm.id
-}
 
 #Port http pour internet depuis tout le monde
 resource "openstack_networking_secgroup_rule_v2" "all_http" {
@@ -103,28 +93,6 @@ resource "openstack_networking_secgroup_rule_v2" "all_https" {
   protocol          = "tcp"
   port_range_min    = 443
   port_range_max    = 443
-  remote_ip_prefix  = "0.0.0.0/0"
-  security_group_id = openstack_compute_secgroup_v2.secgroup_swarm.id
-}
-
-#Affichage de traefik depuis le web sur le port 8080
-resource "openstack_networking_secgroup_rule_v2" "traefik_dashboard" {
-  direction         = "ingress"
-  ethertype         = "IPv4"
-  protocol          = "tcp"
-  port_range_min    = 8080
-  port_range_max    = 8080
-  remote_ip_prefix  = "0.0.0.0/0"
-  security_group_id = openstack_compute_secgroup_v2.secgroup_swarm.id
-}
-
-#Affichage d'adminer depuis le web sur le port 9090
-resource "openstack_networking_secgroup_rule_v2" "adminer_dashboard" {
-  direction         = "ingress"
-  ethertype         = "IPv4"
-  protocol          = "tcp"
-  port_range_min    = 9090
-  port_range_max    = 9090
   remote_ip_prefix  = "0.0.0.0/0"
   security_group_id = openstack_compute_secgroup_v2.secgroup_swarm.id
 }
