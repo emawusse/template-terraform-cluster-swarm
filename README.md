@@ -43,4 +43,3 @@ Exemple du fichier terraform.tfvars:
 
 #Loadbalancer
 - loadbalancer_name = "LB-SWARM"
-
