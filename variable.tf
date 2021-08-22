@@ -1,82 +1,64 @@
-#Swarm Manager
-variable "managers_name" {
+#Swarm Noeuds
+variable "compute_bastion" {
   default = []
 }
 
-variable "workers_name" {
+variable "computes_managers" {
   default = []
 }
 
-variable "bastion_name" {
-  type = string
-}
-
-variable "nbre_managers" {
-  type = number
-}
-
-variable "nbre_workers" {
-  type = number
+variable "computes_workers" {
+  default = []
 }
 
 variable "image_id" {
-  type = string
-}
-
-variable "flavor_managers_id" {
-  type = string
-}
-
-variable "flavor_workers_id" {
-  type = string
-}
-
-variable "flavor_bastion_id" {
-  type = string
+  default = []
 }
 
 variable "key_name" {
-  type = string
-}
-
-#Blockstorage
-variable "size_glusterfs_workers" {
-  type = number
+  default = []
 }
 
 #Network
-variable "network_swarm_name" {
-  type = string
-}
-
 variable "network_bastion_name" {
-  type = string
-}
-
-variable "subnet_swarm_name" {
-  type = string
+  default = []
 }
 
 variable "subnet_bastion_name" {
-  type = string
+  default = []
+}
+
+variable "network_swarm_name" {
+  default = []
+}
+
+variable "subnet_swarm_name" {
+  default = []
 }
 
 #Router
 variable "router_name" {
-  type = string
+  default = []
 }
 
+variable "external_net" {
+  default = []
+}
+
+variable "external_net_id" {
+  default = []
+}
 
 #Secgroup
-variable "secgroup_swarm_name" {
-  type = string
+variable "secgroup_bastion_name" {
+  default = []
 }
 
-variable "secgroup_bastion_name" {
-  type = string
+variable "secgroup_swarm_name" {
+  default = []
 }
 
 #Loadbalancer
 variable "loadbalancer_name" {
-  type = string
+  default = []
 }

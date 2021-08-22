@@ -1,3 +1,4 @@
+#Configuration du reseaux
 resource "openstack_networking_network_v2" "network_bastion" {
   name           = var.network_bastion_name
   admin_state_up = "true"
@@ -21,4 +22,3 @@ resource "openstack_networking_subnet_v2" "subnet_swarm" {
   cidr       = "10.0.20.0/24"
   ip_version = 4
 }
-
