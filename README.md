@@ -6,7 +6,7 @@ Ce projet est le déploiement d'un cluster swarm à x noeuds dans un environneme
 ## Pre-requis
 * Environnement Openstack
 * Mettre Octavia sur la valeur "true" dans le fichier provider pour l'approvisionnement du loadbalancer
-* Définir le fichier comportant sa clé public pour l'injecter lors du déploiement (exemple : key.pub)
+* Définir le fichier comportant sa clé public pour l'injecter lors du déploiement (exemple : id_rsa.pub)
 
 ## Comment utilisé les fichiers ?
 
@@ -18,7 +18,11 @@ Vous devez cloner le projet : git clone https://github.com/enassar225/template-t
 * compute_bastion = {"SRV-BASTION" = "2"}
 * computes_managers = {"MANAGER1" = "2", "MANAGER2" = "2", "MANAGER3" = "2"}
 * computes_workers = {"WORKER1" = "2","WORKER2" = "2","WORKER3" = "2"}
+
+#L'id de l'image
 * image_id = "11b4ac46-74da-4e67-9ebd-5bf22a91d1f8"
+
+#Le nom de la clé
 * key_name = "KEY"
 
 #Nom des groupes de sécurité
