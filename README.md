@@ -11,7 +11,7 @@ Ce projet est le déploiement d'un cluster swarm à x noeuds dans un environneme
 
 ## Comment utilisé les fichiers ?
 
-Vous devez cloner le projet : git clone https://github.com/enassar225/terraform-cluster-nextcloud-openstack puis creer un fichier terraform.tfvars pour y mettre vos variables lors du déploiement de l'infra.
+Vous devez cloner le projet : git clone https://github.com/enassar225/template-terraform-cluster-swarm-openstack puis creer un fichier terraform.tfvars pour y mettre vos variables lors du déploiement de l'infra.
 
 ## Exemple de fichier terraform.tfvars
 
