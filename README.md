@@ -19,6 +19,7 @@ Vous devez cloner le projet : git clone https://github.com/enassar225/terraform-
 compute_bastion = {
   "SRV-BASTION" = "2"
 }
+
 computes_managers = {
   "MANAGER1" = "2",
   "MANAGER2" = "2",
